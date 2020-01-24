@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="description" content="4032's webpage! Here I list my newest projects and post some Informations of myself.">
+    <meta name="keywords" content="moritz, 4032, m4032, projects, about">
+    <meta name="author" content="moritz ~ 4032">
+
+    <title>moritz :: HOME</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <script lang="js" src="assets/js/switch.js"></script>
+</head>
+<body onkeyup="keyPressForward(event)">
+
+<div id="m4-header">
+        <h1 class="m4-title">moritz</h1>
+        <h2 class="m4-subtitle"></h2>
+        <a href="https://twitter.com/_m4032" class="m4-link-extern" target="_blank"><i class="fab fa-twitter"></i></a>
+       <section id="m4-navigation">
+            <a id="m4-current-page" onclick="switchTo('m4-aboutme')">Home</a>
+            <a onclick="switchTo('m4-aboutme')">About Me</a>
+            <a onclick="switchTo('m4-projects')">Projects</a>
+        </section>
+    </div>
+
+    <div id="m4-home">
+        <h1>Willkommen!</h1>
+    </div>
+
+    <div id="m4-aboutme">
+        <p>Hey, mein Name ist <mark>Moritz</mark> ich bin <mark>17 Jahre</mark> alt <br>und komme aus dem wunderbaren <mark>Österreich</mark>.</p>
+    </div>
+
+    <div id="m4-projects">
+        <div id="m4-project-container">
+            <div class="m4-project" id="project_web">
+                <img src="assets/img/banner_web.png" alt="">
+                <h2>Webpage</h2>
+                <p>Meine Webseite auf welcher ich meine neuesten Projekte aufliste und einige Informationen über mich veröffentliche. :)</p>
+                <a href="https://github.com/4032/4032.github.io">Source Code</a>
+                <a href="https://4032.github.io" target="_blank">View</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+       if(window.location.href.includes("?aboutme")) switchTo("m4-aboutme");
+       else if(window.location.href.includes("?projects")) switchTo("m4-projects");
+    </script>
+</body>
+</html>
