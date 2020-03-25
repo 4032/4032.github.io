@@ -27,7 +27,7 @@ body {
 }
 
 #m4-projects {
-    height: 70vh;
+    height: 84vh;
 }
 
 #m4-header {
@@ -61,6 +61,11 @@ body {
 
     font-family: 'Pacifico', cursive;
     text-shadow: 0 6px #00705c;
+
+    -webkit-transition-duration: .7s;
+    -moz-transition-duration: .7s;
+    -o-transition-duration: .7s;
+    transition-duration: .7s;
 }
 
 #m4-navigation {
@@ -126,15 +131,12 @@ body {
     color: #00b674;
 }
 
-
-
-
 #m4-aboutme p, #m4-home h1 {
     position: absolute;
     left: 50%;
     top: 50%;
 
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
 
     font-family: 'Major Mono Display', monospace;
@@ -193,7 +195,7 @@ body {
 }
 
 .m4-project {
-    margin: 40px auto;
+    margin: 10px auto;
     background-color: #fff;
     width: 80%;
     padding-bottom: 10px;
@@ -239,12 +241,11 @@ body {
 
 .m4-project a {
     text-decoration: none;
-    border-radius: 20px;
     border: 2px solid #008c74;
-    padding: 20px;
+    padding: 15px;
     margin: 20px 10px;
     text-align: center;
-    width: 200px;
+    width: 150px;
 
     -webkit-transition-duration: .3s;
     -moz-transition-duration: .3s;
@@ -255,18 +256,14 @@ body {
     display: inline-block;
 }
 
+.m4-project .buttons {
+    width: 450px;
+    margin: 0 auto;
+}
+
 .m4-project a:hover {
     background-color: #008c74;
     color: #ffffff;
 
-    padding: 20px 50px;
-}
-
-@media only screen and (max-width: 1580px){
-    #m4-home {
-        background: none;
-    }
-    #m4-aboutme {
-        background: none;
-    }
+    padding: 15px 30px;
 }

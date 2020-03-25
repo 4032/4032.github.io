@@ -30,8 +30,13 @@ function change(name, prev) {
     setTimeout(function () {
         this.hide(prev);
         this.show(name);
-        if(name=="m4-projects") header.style.height = 30 + "vh";
-        else header.style.height = 40 + "vh";
+        if(name=="m4-projects") {
+            header.getElementsByTagName("h1").item(0).style.opacity = "0";
+            header.style.height = 15 + "vh";
+        } else {
+            header.style.height = 40 + "vh";
+            header.getElementsByTagName("h1").item(0).style.opacity = "1";
+        }
     }, 1030);
 
     setTimeout(function () {
